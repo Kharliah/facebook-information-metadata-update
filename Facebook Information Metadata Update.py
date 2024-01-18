@@ -26,7 +26,6 @@ for html_file in html_files:
         html_content = file.read()
 
     soup = BeautifulSoup(html_content, 'html.parser')
-    soup = BeautifulSoup(html_content, 'html.parser')
 
     # Find all links with href containing "your_activity_across_facebook"
     links = soup.find_all('a', href=lambda x: x and 'your_activity_across_facebook' in x)
